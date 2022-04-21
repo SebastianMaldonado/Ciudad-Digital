@@ -8,5 +8,5 @@
 -Implementación de función para lectura de archivos en formato txt de las bases de datos.
 
 ## Acceso a funcionalidad
--Por medio de la clase Cliente, podremos acceder al módulo administrativo con el cual podremos interactuar con la base de datos de las empresas, al poder crear, liquidar y acceder a sus funciones.
--Instanciación de ejemplo al final del algoritmo principal.
+- Por medio de la clase Cliente, podremos acceder al módulo administrativo con el cual podremos interactuar con la base de datos de las empresas, al poder crear, liquidar y acceder a sus funciones.
+- Instanciación de ejemplo al final del algoritmo principal.
