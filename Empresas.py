@@ -14,8 +14,6 @@ class Empresa:
     self.productos = []
     self.servicios = []
     self.ofertas = []
-    cargar_empresa(self)
-
 
     def cargar_empresa (self):
         base_datos = open("Archivos/productos.txt", "r")
