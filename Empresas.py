@@ -1,5 +1,13 @@
-from abc import ABC, abstractmethod
+from Productos import *
 
+
+'''
+|====================================================================|
+*                            |Empresa|
+* Descripcion:                                                        
+*   
+|====================================================================|
+'''
 class Empresa:
 
   def __init__ (self, nombre, tipo, nr_empleados, list_empleados, list_servicios, ofertas_laborales, codigo):
@@ -15,7 +23,12 @@ class Empresa:
     self.servicios = []
     self.ofertas = []
 
+
+    #-------------------------------- |Cargar datos| --------------------------------#
+    # Método por medio del cual la empresa carga y almacena todos los objetos
+    # de las bases de datos relacionados con ella
     def cargar_empresa (self):
+        # Cargar Productos
         base_datos = open("Archivos/productos.txt", "r")
         for linea in base_datos:
             datos = linea.split("|")
@@ -23,13 +36,15 @@ class Empresa:
                 producto = Producto()
                 self.productos.append(producto)
 
+        # Cargar Servicios
         base_datos = open("Archivos/servicios.txt", "r")
         for linea in base_datos:
             datos = linea.split("|")
             if (datos[0] == self.codigo):
                 servicio = Servicio()
                 self.servicios.append(servicio)
-
+        
+        # Cargar Ofertas Laborales
         base_datos = open("Archivos/ofertas.txt", "r")
         for linea in base_datos:
             datos = linea.split("|")
@@ -37,6 +52,9 @@ class Empresa:
                 oferta = ofertas_lab()
                 self.ofertas.append(oferta)
 
+
+    #-------------------------------- |Vender Producto| --------------------------------#
+    # 
     def vender_prod ():
         producto = Producto()
         self.productos.append(producto)
@@ -45,7 +63,9 @@ class Empresa:
         base_datos.write(self.codigo)
         base_datos.close()
 
-    def vender_serv ():
+
+    #-------------------------------- |Vender Servicio| --------------------------------#
+    # 
         servicio = Producto()
         self.servicios.append(servicio)
 
@@ -53,6 +73,9 @@ class Empresa:
         base_datos.write(self.codigo)
         base_datos.close()
 
+
+    #-------------------------------- |Mostrar Ofertas laborales| --------------------------------#
+    # 
     def ofertas_lab ():
         oferta = ofertas_lab()
         self.ofertas.append(oferta)
@@ -64,25 +87,8 @@ class Empresa:
     def aceptar_trab ():
         pass
 
-class Productos (ABC):
-    
-    @abstractmethod
-    def __init__(self, Nombre, Categoria, Precio):
-        self.Nombre = Nombre
-        self.Categoria = Categoria
-        self.Precio = Precio
-        
-class Producto (Productos):
-    def __init__ (self, Cantidad,Empresa,Nombre,Categoria,Precio):
-        self.Fabricante = Empresa
-        self.Cantidad = Cantidad
-        super().__init__(Nombre,Categoria,Precio)
 
-class Servicio (Productos):
-    def __init__ (self, Cupo, Empresa,Nombre,Categoria,Precio):
-        self.Cupo = Cupo
-        self.Provedor = Empresa 
-        super().__init__(Nombre,Categoria,Precio)
+
         
 
     
