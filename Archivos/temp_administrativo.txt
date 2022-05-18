@@ -1,0 +1,2 @@
+Triple A|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|1000
+Triple A|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|1000

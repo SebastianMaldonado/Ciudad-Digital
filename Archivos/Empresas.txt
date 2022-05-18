@@ -1,0 +1,24 @@
+ElectriCaribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|1000
+Triple A|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|2000
+Gases del Caribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|3000
+ElectriCaribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|1000
+Triple A|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|2000
+Gases del Caribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|3000
+ElectriCaribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|1000
+Triple A|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|2000
+Gases del Caribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|3000
+ElectriCaribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|1000
+Triple A|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|2000
+Gases del Caribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|3000
+ElectriCaribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|1000
+Triple A|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|2000
+Gases del Caribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|3000
+ElectriCaribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|1000
+Triple A|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|2000
+Gases del Caribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|3000
+ElectriCaribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|1000
+Triple A|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|2000
+Gases del Caribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|3000
+ElectriCaribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|1000
+Triple A|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|2000
+Gases del Caribe|tipo|nr_empleados|list_empleados|list_servicios|ofertas_laborales|3000
