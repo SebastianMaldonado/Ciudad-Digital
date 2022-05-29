@@ -27,9 +27,9 @@ class Productos (ABC):
 |====================================================================|
 '''
 class Producto (Productos):
-    def __init__ (self, Cantidad,Empresa,Nombre,Categoria,Precio):
-        self.Fabricante = Empresa
-        self.Cantidad = Cantidad
+    def __init__ (self, Cantidad, Nombre, Empresa, Categoria, Precio):
+        self.fabricante = Empresa
+        self.cantidad = Cantidad
         super().__init__(Nombre,Categoria,Precio)
 
 
@@ -42,7 +42,7 @@ class Producto (Productos):
 |====================================================================|
 '''
 class Servicio (Productos):
-    def __init__ (self, Cupo, Empresa,Nombre,Categoria,Precio):
-        self.Cupo = Cupo
-        self.Provedor = Empresa 
+    def __init__ (self, Cupo, Nombre, Empresa ,Categoria, Precio):
+        self.cupo = Cupo
+        self.proveedor = Empresa 
         super().__init__(Nombre,Categoria,Precio)

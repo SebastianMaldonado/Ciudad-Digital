@@ -1,4 +1,4 @@
-from Empresas import Empresa;
+from Base_datos import *
 
 '''
 |====================================================================|

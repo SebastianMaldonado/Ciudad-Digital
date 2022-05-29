@@ -1,6 +1,7 @@
+#%%
 from Productos import *
 
-
+#%%
 '''
 |====================================================================|
 *                            |Empresa|
@@ -10,85 +11,54 @@ from Productos import *
 '''
 class Empresa:
 
-  def __init__ (self, nombre, tipo, nr_empleados, list_empleados, list_servicios, ofertas_laborales, codigo):
-    self.nombre = nombre                          
-    self.tipo = tipo                              
-    self.nr_empleados = nr_empleados              
-    self.list_empleados = list_empleados
-    self.list_servicios = list_servicios
-    self.ofertas_laborales = ofertas_laborales
-    self.codigo = codigo
+    def __init__ (self, codigo, nombre, tipo):
+        self.codigo = codigo
+        self.nombre = nombre                          
+        self.tipo = tipo      
 
-    self.productos = []
-    self.servicios = []
-    self.ofertas = []
+        self.productos = self.cargar_productos(2, codigo)
+        self.servicios = self.cargar_servicios(2, codigo)
 
 
-    #-------------------------------- |Cargar datos| --------------------------------#
-    # Método por medio del cual la empresa carga y almacena todos los objetos
-    # de las bases de datos relacionados con ella
-    def cargar_empresa (self):
-        # Cargar Productos
-        base_datos = open("Archivos/productos.txt", "r")
-        for linea in base_datos:
+    #-------------------------------- |Cargar Productos| --------------------------------#
+    # criterio: Ingresar criterio de búsqueda
+    # ind: (0) sin criterio | (1) cantidad | (2) cod. empresa | (3) nombre | (4) categoría | (5) precio
+    def cargar_productos (self, ind, criterio) -> Producto:
+        lista = []
+
+        archivo = open("Archivos/Productos.txt", "r")
+        for linea in archivo:
             datos = linea.split("|")
-            if (datos[0] == self.codigo):
-                producto = Producto()
-                self.productos.append(producto)
 
-        # Cargar Servicios
-        base_datos = open("Archivos/servicios.txt", "r")
-        for linea in base_datos:
+            if (ind == 0):
+                lista.append(Producto(datos[0], self, datos[2], datos[3], datos[4]))
+            elif (datos[ind - 1] == criterio):
+                lista.append(Producto(datos[0], self, datos[2], datos[3], datos[4]))
+        archivo.close()
+        return lista
+
+
+    #-------------------------------- |Cargar Servicios| --------------------------------#
+    # criterio: Ingresar criterio de búsqueda
+    # ind: (0) sin criterio | (1) cantidad | (2) cod. empresa | (3) nombre | (4) categoría | (5) precio
+    def cargar_servicios (self, ind, criterio) -> Servicio:
+        lista = []
+
+        archivo = open("Archivos/Servicios.txt", "r")
+        for linea in archivo:
             datos = linea.split("|")
-            if (datos[0] == self.codigo):
-                servicio = Servicio()
-                self.servicios.append(servicio)
-        
-        # Cargar Ofertas Laborales
-        base_datos = open("Archivos/ofertas.txt", "r")
-        for linea in base_datos:
-            datos = linea.split("|")
-            if (datos[0] == self.codigo):
-                oferta = ofertas_lab()
-                self.ofertas.append(oferta)
 
-
-    #-------------------------------- |Vender Producto| --------------------------------#
-    # 
-    def vender_prod ():
-        producto = Producto()
-        self.productos.append(producto)
-
-        base_datos = open("Archivos/productos.txt", "a")
-        base_datos.write(self.codigo)
-        base_datos.close()
-
-
-    #-------------------------------- |Vender Servicio| --------------------------------#
-    # 
-        servicio = Producto()
-        self.servicios.append(servicio)
-
-        base_datos = open("Archivos/servicios.txt", "a")
-        base_datos.write(self.codigo)
-        base_datos.close()
-
-
-    #-------------------------------- |Mostrar Ofertas laborales| --------------------------------#
-    # 
-    def ofertas_lab ():
-        oferta = ofertas_lab()
-        self.ofertas.append(oferta)
-
-        base_datos = open("Archivos/ofertas.txt", "a")
-        base_datos.write(self.codigo)
-        base_datos.close()
-
-    def aceptar_trab ():
-        pass
+            if (ind == 0):
+                lista.append(Servicio(datos[0], self, datos[2], datos[3], datos[4]))
+            elif (datos[ind - 1] == criterio):
+                lista.append(Servicio(datos[0], self, datos[2], datos[3], datos[4]))
+        archivo.close()
+        return lista
 
 
 
         
 
     
+
+# %%

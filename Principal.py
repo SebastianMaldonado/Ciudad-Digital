@@ -170,6 +170,15 @@ class Administrativo ():
     pass 
       
 # %%
+modulo_ad = Administrativo()
+modulo_lab = Laboral()
+modulo_tur = Turista()
+modulo_est = Estudiantil()
+modulo_com = Comercio()
+
+
+
+
 cliente = Cliente("Cliente", "2000", "12345") #Crear Cliente
 cliente.acceder_modulo(1)                     #Acceder a módulo administrativo
 
