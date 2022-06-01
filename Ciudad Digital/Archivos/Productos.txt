@@ -1,0 +1,12 @@
+Cantidad | Nombre | Cod. Empresa | Categoría | Precio
+10|Celular Motorola|2046|Telefonia|860000|
+10|Celular Blackberry|2044|Comercio|1020000|
+10|Celular Huawei|2043|Comercio|85000|
+10|Celular Samsung|2043|Comercio|920000|
+10|Celular iPhone|2044|Comercio|1200000100|
+1|Ron Medellin|2042|Licores|20000|
+1|Ron Medellin|2047|Licores|20000|
+100|Mazorca x6|1242|Alimentos|100000|
+100|Lechuga|1242|Alimentos|7000|
+50|Ron Medellin|1242|Licores|20000|
+100|Yuca|1242|Comercio|5000|

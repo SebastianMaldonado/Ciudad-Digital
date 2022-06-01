@@ -1,0 +1,15 @@
+2043|Metrotel|telefonia|
+2042|Claro|telefonia|
+2041|Movistar|telefonia|
+2044|WOOM|telefonia|
+2046|Une|telefonia|
+2047|ETB|telefonia|
+1242|Olimpica|Tienda|
+1024|D1|Tienda|
+1421|Estadio Metropolitano|Turista|
+1242|Cerveceria|Licores|
+5342|Cerveza Aguila|Licores|
+1245|Augusto|Vichada|
+6574|Imprentas Hans|Imprenta|
+6421|Electrica AIRE|Electricidad|
+1248|Cristian Imprentas S.A.|Imprenta|

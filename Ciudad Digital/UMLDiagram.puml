@@ -1,0 +1,105 @@
+@startuml
+class  Cliente{
+    -Codigo
+    +ofertas_lab
+    +Estudiante
+    +Institución
+
+    +aceptar()
+    +subir_cv()
+
+}
+abstract class Modulo{
+    +Busqueda(Dato:String)
+}
+abstract class Productos{
+    +Nombre
+    +Categoria
+    +Precio
+}
+class Administrativo {
+    + accederEmpresa ()
+    + crearEmpresa()
+    + liquidarEmpresa() 
+}
+
+class Laboral {
+    
+    + solicitarEmpleo (Empleo: OfertasLaboral, Solicitante: Cliente)
+    + retirarSolicitud (Empleo: OfertasLaboral, Solicitante: Cliente)
+}
+
+class Turista {
+    
+    + guardarCupo (Establecimiento: Servicio)
+    + pagarServicio (Servicio: Servicio)
+}
+
+
+class Estudiantil {
+   
+    + inscribirCurso (Curso: Servicio)
+    + salirCurso (Curso: Servicio)
+}
+
+
+class Comercio {
+   
+    + comprarProductos (Carrito: Productos[ ]);
+}
+
+
+class Empresas {
+    +Tipo
+    +nr_empleados
+    +list_de_empleados
+    +list_de_servicios
+    +ofertas_laborales
+    +Codigo
+    
+    +vender_prod()
+    +vender_serv()
+    +ofertas_trab()
+    +aceptar_trab()
+
+}
+
+class OfertasLaboral {
+    + Contratante: Empresa
+    + Trabajo: String
+    + Descripción: String
+    + Salario: int
+    + Prestaciones: String
+    + Disponible: boolean
+}
+
+class Servicios {
+    + Cupo 
+    + Proveedor: Empresa
+}
+
+class Producto {
+    + Cantidad
+    + Fabricante: Empresa
+}
+left to right direction 
+Cliente -- Modulo #line:red;line.bold;text:red
+Modulo --- Administrativo #line:red;line.bold;text:red 
+Modulo -- Laboral #line:red;line.bold;text:red
+Modulo -- Turista #line:red;line.bold;text:red
+Modulo -- Estudiantil #line:red;line.bold;text:red
+Modulo -- Comercio #line:red;line.bold;text:red
+
+Productos -- Servicios #line:red;line.bold;text:red
+Productos -- Producto  #line:red;line.bold;text:red
+
+Laboral *-- OfertasLaboral #line:green;line.bold;text:green
+Turista *-- Servicios #line:green;line.bold;text:green
+Estudiantil *-- Servicios #line:green;line.bold;text:green
+Comercio *-- Producto #line:green;line.bold;text:green
+
+Administrativo "1" *--"*" Empresas #line:blue;line.bold;text:blue
+OfertasLaboral "1" *--"*" Empresas #line:blue;line.bold;text:blue
+Servicios "1" *--"*" Empresas #line:blue;line.bold;text:blue
+Producto "1"*--"*" Empresas #line:blue;line.bold;text:blue
+@enduml
