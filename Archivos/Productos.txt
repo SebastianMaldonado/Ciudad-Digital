@@ -1,9 +1,0 @@
-Cantidad | Nombre | Cod. Empresa | Categoría | Precio
-10|Celular Motorola|2046|Telefonia|860000|
-10|Celular Blackberry|2044|Telefonia|1020000|
-10|Celular Huawei|2043|Telefonia|85000|
-10|Celular Samsung|2043|Telefonia|920000|
-10|Celular iPhone|2044|Telefonia|1200000100|
-1|Ron Medellin|1242|Licores|20000|
-1|Ron Medellin|1242|Licores|20000|
-1|Ron Medellin|1242|Licores|20000|

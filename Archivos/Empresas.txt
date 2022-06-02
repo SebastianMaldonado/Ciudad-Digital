@@ -1,8 +1,0 @@
-2043|Metrotel|telefonia|
-2042|Claro|telefonia|
-2041|Movistar|telefonia|
-2044|WOOM|telefonia|
-2046|Une|telefonia|
-2047|ETB|telefonia|
-1242|Olimpica|Tienda|
-1242|Olimpica|Tienda|
